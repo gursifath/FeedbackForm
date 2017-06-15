@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#696969"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:orientation="vertical"-->
+    <!--android:background="#696969"-->
+    <!--tools:context="com.example.bhasingursifath.dummyfeedbackform.ReviewActivity">-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#696969"
+        tools:context="com.example.bhasingursifath.dummyfeedbackform.ReviewActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+            <TextView
+                android:id="@+id/TV_Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5"
+                android:text="What is your Name?"
+                android:textColor="#FFFFFF"
+                android:background="#000"/>
+
+            <EditText
+                android:id="@+id/ET_Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:hint="Type Name Here"
+                android:inputType="textPersonName"
+                android:backgroundTint="#696969"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:id="@+id/radiogroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:checkedButton="1"
+                android:gravity="center_horizontal">
+
+                <RadioButton
+                    android:id="@+id/checkbox1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:layout_weight="1"/>
+
+                <RadioButton
+                    android:id="@+id/checkBox2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Female" />
+
+                <RadioButton
+                    android:id="@+id/checkbox3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Others"/>
+            </RadioGroup>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+            <TextView
+                android:id="@+id/TV_Age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5"
+                android:text="What is your Age?"
+                android:textColor="#FFFFFF"
+                android:background="#000"/>
+
+            <EditText
+                android:id="@+id/ET_Age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.00001"
+                android:hint="        "
+                android:maxLength="2"
+                android:backgroundTint="#696969"/>
+
+            <TextView
+                android:id="@+id/TV_years"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text=" Years"
+                android:textColor="#000"
+                android:background="#696969"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+            <TextView
+                android:id="@+id/TV_NameOFWorkshop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Name of Workshop attended"
+                android:textColor="#FFFFFF"
+                android:background="#000" />
+
+            <Spinner
+                android:id="@+id/SP_NameOfWorkshop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"></Spinner>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+            <TextView
+                android:id="@+id/TV_AreaOFWorkshop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Area of Workshop attended"
+                android:textColor="#FFFFFF"
+                android:background="#000"/>
+            <Spinner
+                android:id="@+id/SP_AreaOFWorkshop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"></Spinner>
+        </LinearLayout>
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_margin="10dp">-->
+        <!--<TextView-->
+        <!--android:id="@+id/TV_Date"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1"-->
+        <!--android:text="Date of Workshop"-->
+        <!--android:textColor="#FFFFFF"-->
+        <!--android:background="#000"/>-->
+        <!--<TextView-->
+        <!--android:id="@+id/DatePicker"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="20"-->
+        <!--android:text="Select Date"-->
+        <!--android:textColor="#000"/>-->
+
+        <!--</LinearLayout>-->
+
+
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_margin="10dp">-->
+        <!--<TextView-->
+        <!--android:id="@+id/TV_Time"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1"-->
+        <!--android:text="Time of Workshop"-->
+        <!--android:textColor="#FFFFFF"-->
+        <!--android:background="#000"/>-->
+        <!--<TextView-->
+        <!--android:id="@+id/TimePicker"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="20"-->
+        <!--android:text="Select Time"-->
+        <!--android:textColor="#000"/>-->
+        <!--</LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+            <TextView
+                android:id="@+id/TV_Feedback"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Your Feedback"
+                android:textColor="#FFFFFF"
+                android:background="#000"/>
+            <EditText
+                android:id="@+id/feedback"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5"
+                android:hint="Type Here"
+                android:lines="2"
+                android:minLines="1"
+                android:maxLines="5"
+                android:backgroundTint="#696969"
+                android:inputType="textLongMessage"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <Button
+                android:id="@+id/angry_btn"
+
+                android:text="SUBMIT"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+
+                android:layout_width="270dp"
+                android:layout_height="60dp"
+                android:background="@drawable/drawable_button_shape"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</ScrollView>
